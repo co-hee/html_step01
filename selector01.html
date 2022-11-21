@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector01</title>
+    <style>
+        #id {
+            /* id값이 태그 값보다 우선한다 */
+            color: blue;
+            padding: 100px;
+            /* 상우하좌; 상하 좌우; 상 좌우 하; */
+            box-sizing: border-box;
+        }
+
+        .class {
+            color: yellowgreen;
+        }
+
+        div {
+            /* 속성 : 속성값; */
+            color: red;
+            background-color: #ddd;
+            width: 1200px;
+            border: 1px solid #333;
+            margin: 100px;
+            /* 마진상쇄현상으로 인해 마진은 아래쪽 값만 부여함; 자식과 부모사이에도 겹침 */
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+</body>
+
+<div id="id" class="class">selector01</div>
+<div class="class ft fg">selector01</div>
+<div>selector01</div>
+<div>selector01</div>
+<div>selector01</div>
+
+
+</html>
